@@ -24,7 +24,7 @@ class LastMonthUser
     days_between_users = next_month_user[:signup_date] - this_month_user[:signup_date]
     signups_rate = (next_month_user[:user_id] - this_month_user[:user_id]) / days_between_users
 
-    [this_month_user[:user_id] + (signups_rate * days_between_users/2), signups_rate]
+    [this_month_user[:user_id] + (signups_rate * (date_guess - this_month_user[:signup_date])), signups_rate]
   end
 
 end
