@@ -1,8 +1,8 @@
 require 'spec_helper'
-require 'lib/last_month_user'
+require 'lib/week_segmenter'
 
 
-describe LastMonthUser, vcr: true do
+describe WeekSegmenter, vcr: true do
   context 'when guessing the id without any call to Twitter API' do
 
     # We have two users (100 and 300) signed up with 20 days of difference,
@@ -13,7 +13,7 @@ describe LastMonthUser, vcr: true do
     let(:second_user) { { user_id: 300, signup_date: (Date.today + 20.days) } }
 
     before do
-      @user_id, @user_rate = LastMonthUser.initial_user_id_guess first_user, second_user, Date.today + 5.days
+      @user_id, @user_rate = WeekSegmenter.initial_user_id_guess first_user, second_user, Date.today + 5.days
     end
 
     it "should find user 150 as the last signed up 3 days from now" do
@@ -29,7 +29,7 @@ describe LastMonthUser, vcr: true do
   context 'when accessing twitter' do
 
     it "should fetch users" do
-      LastMonthUser.client.user(20).screen_name.should eq 'ev'
+      WeekSegmenter.client.user(20).screen_name.should eq 'ev'
     end
 
   end

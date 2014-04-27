@@ -5,7 +5,7 @@ require 'active_support/all'
 # This class will attempt to search the last user signed up in Twitter for a given month.
 # All this class needs is a user from each month and then it will search on twitter for a
 # Twitter user wich was signed up that month
-class LastMonthUser
+class WeekSegmenter
 
   # Singleton method for getting twitter client according to the configuration in the YML file
   def self.client
