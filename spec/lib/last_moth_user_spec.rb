@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'lib/last_month_user'
 
 
-describe LastMonthUser do
+describe LastMonthUser, vcr: true do
   context 'when guessing the id without any call to Twitter API' do
 
     # We have two users (100 and 300) signed up with 20 days of difference,
@@ -25,4 +25,13 @@ describe LastMonthUser do
     end
 
   end
+
+  context 'when accessing twitter' do
+
+    it "should fetch users" do
+      LastMonthUser.client.user(20).screen_name.should eq 'ev'
+    end
+
+  end
+
 end
