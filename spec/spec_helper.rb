@@ -23,6 +23,7 @@ RSpec.configure do |config|
     c.before_playback do |interaction|
       interaction.ignore! if interaction.response.status.code >= 400
     end
+    c.default_cassette_options = { :record => :new_episodes }
   end
 
   # Run specs in random order to surface order dependencies. If you find an

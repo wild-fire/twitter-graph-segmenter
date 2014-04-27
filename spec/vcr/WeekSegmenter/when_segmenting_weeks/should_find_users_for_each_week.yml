@@ -1,0 +1,3501 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=41
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="c825e84bdfde40cfddd5608460ee9891",
+        oauth_signature="U3%2BfFuggF4wLz52Kbh%2FnV1%2FzpU8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398637684", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '717'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:28:05 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:28:05 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863768539546624; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:28:05 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '140'
+      X-Rate-Limit-Reset:
+      - '1398638428'
+      X-Transaction:
+      - 833888ef607855fa
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":41,"id_str":"41","name":"drx","screen_name":"drx","location":"Deep
+        in the Archives","description":"Adept bubble burster. Good problem connoisseur.
+        Assassin of heroes.","url":"http:\/\/t.co\/BCZBPGJ98H","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/BCZBPGJ98H","expanded_url":"http:\/\/www.last.fm\/user\/drx","display_url":"last.fm\/user\/drx","indices":[0,22]}]},"description":{"urls":[]}},"protected":true,"followers_count":33,"friends_count":45,"listed_count":8,"created_at":"Thu
+        Mar 23 00:05:49 +0000 2006","favourites_count":1025,"utc_offset":-14400,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":6937,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"131516","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/3573696176\/717003133cb7e58cda5522b56976b490_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/3573696176\/717003133cb7e58cda5522b56976b490_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/41\/1356233175","profile_link_color":"2F3631","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"EFEFEF","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:28:05 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=47
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="47cc481187219dad1ff7c4fc41a325de",
+        oauth_signature="d9g%2F1g4lFUEaL8V7ARrO0TfktUk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398637802", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '1021'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:30:03 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:30:03 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863780369492533; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:30:03 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '114'
+      X-Rate-Limit-Reset:
+      - '1398638428'
+      X-Transaction:
+      - 37576373bbfbe081
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":47,"id_str":"47","name":"kellan","screen_name":"kellan","location":"Brooklyn,
+        NY","description":"CTO at Etsy. Technical solutions for social problems. #47
+        (Anwen''s dad)","url":"http:\/\/t.co\/EnfJLV7Rzx","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/EnfJLV7Rzx","expanded_url":"http:\/\/laughingmeme.org","display_url":"laughingmeme.org","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":9149,"friends_count":1140,"listed_count":417,"created_at":"Fri
+        Mar 24 03:13:02 +0000 2006","favourites_count":15043,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":12168,"lang":"en","status":{"created_at":"Sun
+        Apr 27 15:51:30 +0000 2014","id":460446146251743232,"id_str":"460446146251743232","text":"@spikebrehm
+        that looks more likes Features (https:\/\/t.co\/S5QaF4J4bD) then Catapult.","source":"web","truncated":false,"in_reply_to_status_id":459379262315712512,"in_reply_to_status_id_str":"459379262315712512","in_reply_to_user_id":17802123,"in_reply_to_user_id_str":"17802123","in_reply_to_screen_name":"spikebrehm","geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"https:\/\/t.co\/S5QaF4J4bD","expanded_url":"https:\/\/github.com\/etsy\/Feature\/","display_url":"github.com\/etsy\/Feature\/","indices":[44,67]}],"user_mentions":[{"screen_name":"spikebrehm","name":"spikebrehm","id":17802123,"id_str":"17802123","indices":[0,11]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"026BFA","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/2346368\/flow.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/2346368\/flow.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/457754650\/01457d1a0f0e533062cd0d1033fb4d7a_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/457754650\/01457d1a0f0e533062cd0d1033fb4d7a_normal.png","profile_link_color":"0000FF","profile_sidebar_border_color":"87BC44","profile_sidebar_fill_color":"F5D91F","profile_text_color":"000000","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:30:03 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=52
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="94698e57dcde37a58af8da3c7d79c297",
+        oauth_signature="hA%2Bsrjb9tuKj3atwl6ChgifxL8o%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398637804", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '1012'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:30:05 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:30:05 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863780574485559; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:30:05 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '112'
+      X-Rate-Limit-Reset:
+      - '1398638428'
+      X-Transaction:
+      - 0278c619930807de
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":52,"id_str":"52","name":"Hook","screen_name":"hook","location":"San
+        Jose","description":"District Mgr with an insatiable appetite for learning.  Good
+        at consulting, sales and operations.  Love Irish pubs, U2, and my baby girl
+        Sophia.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":4672,"friends_count":81,"listed_count":15,"created_at":"Sat
+        Apr 01 01:55:21 +0000 2006","favourites_count":0,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":913,"lang":"en","status":{"created_at":"Sat
+        Nov 30 05:54:59 +0000 2013","id":406662625037008896,"id_str":"406662625037008896","text":"Gucci
+        handbags Stores,http:\/\/t.co\/A4Az5a5ix7 Newest Styles,72% Off,700+Selections,Free
+        Shipping!","source":"\u003ca href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eMobile
+        Web (M2)\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":1,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/A4Az5a5ix7","expanded_url":"http:\/\/jhyr.tk\/gucci,2013","display_url":"jhyr.tk\/gucci,2013","indices":[22,44]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"ACDED6","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/14020102\/Scott_Twitter_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/14020102\/Scott_Twitter_normal.jpg","profile_link_color":"038543","profile_sidebar_border_color":"EEEEEE","profile_sidebar_fill_color":"F6F6F6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:30:06 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=47
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="a0d40251f3ce882bf920c805001fbf1c",
+        oauth_signature="udT0yvKQUVUoPWZYSHBWdBmb4Ok%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398637808", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '1021'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:30:09 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:30:09 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863780986920540; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:30:09 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '108'
+      X-Rate-Limit-Reset:
+      - '1398638428'
+      X-Transaction:
+      - 36d7e1e166d35a27
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":47,"id_str":"47","name":"kellan","screen_name":"kellan","location":"Brooklyn,
+        NY","description":"CTO at Etsy. Technical solutions for social problems. #47
+        (Anwen''s dad)","url":"http:\/\/t.co\/EnfJLV7Rzx","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/EnfJLV7Rzx","expanded_url":"http:\/\/laughingmeme.org","display_url":"laughingmeme.org","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":9149,"friends_count":1140,"listed_count":417,"created_at":"Fri
+        Mar 24 03:13:02 +0000 2006","favourites_count":15043,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":12168,"lang":"en","status":{"created_at":"Sun
+        Apr 27 15:51:30 +0000 2014","id":460446146251743232,"id_str":"460446146251743232","text":"@spikebrehm
+        that looks more likes Features (https:\/\/t.co\/S5QaF4J4bD) then Catapult.","source":"web","truncated":false,"in_reply_to_status_id":459379262315712512,"in_reply_to_status_id_str":"459379262315712512","in_reply_to_user_id":17802123,"in_reply_to_user_id_str":"17802123","in_reply_to_screen_name":"spikebrehm","geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"https:\/\/t.co\/S5QaF4J4bD","expanded_url":"https:\/\/github.com\/etsy\/Feature\/","display_url":"github.com\/etsy\/Feature\/","indices":[44,67]}],"user_mentions":[{"screen_name":"spikebrehm","name":"spikebrehm","id":17802123,"id_str":"17802123","indices":[0,11]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"026BFA","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/2346368\/flow.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/2346368\/flow.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/457754650\/01457d1a0f0e533062cd0d1033fb4d7a_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/457754650\/01457d1a0f0e533062cd0d1033fb4d7a_normal.png","profile_link_color":"0000FF","profile_sidebar_border_color":"87BC44","profile_sidebar_fill_color":"F5D91F","profile_text_color":"000000","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:30:10 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=70
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="c89a0be183c1833acdfd364e681e5ae5",
+        oauth_signature="noKbWxT0njfDjtqzWnRmLVG06e0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398637812", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '878'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:30:13 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:30:13 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863781304183917; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:30:13 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '105'
+      X-Rate-Limit-Reset:
+      - '1398638428'
+      X-Transaction:
+      - 047b32ba1d938897
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":70,"id_str":"70","name":"Shannon","screen_name":"shannon","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":848,"friends_count":134,"listed_count":13,"created_at":"Sat
+        Apr 01 19:30:51 +0000 2006","favourites_count":15,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":1215,"lang":"en","status":{"created_at":"Tue
+        Apr 22 18:10:38 +0000 2014","id":458669220650553344,"id_str":"458669220650553344","text":"Watching
+        Memorial for #horstrechelbacher\nWho was a huge inspiration for me. I''m filled
+        with emotion, and gratitude for all you accomplished.","source":"web","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":4,"favorite_count":5,"entities":{"hashtags":[{"text":"horstrechelbacher","indices":[22,40]}],"symbols":[],"urls":[],"user_mentions":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"EDECE9","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme3\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme3\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/434424507223121921\/dnm4iHBY_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/434424507223121921\/dnm4iHBY_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/70\/1357242596","profile_link_color":"088253","profile_sidebar_border_color":"D3D2CF","profile_sidebar_fill_color":"E3E2DE","profile_text_color":"634047","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:30:13 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=76
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="b9fb5bb92c26e5a963f4425780a7d519",
+        oauth_signature="PJPXYITg6sV%2B5k0pI%2B0pEYoLl6E%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398637815", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '1381'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:30:21 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:30:21 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863782105707774; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:30:21 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '102'
+      X-Rate-Limit-Reset:
+      - '1398638428'
+      X-Transaction:
+      - 528c2953d2805c26
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":76,"id_str":"76","name":"Marcia Dorsey","screen_name":"marciadorsey","location":"The
+        City of St. Louis, MO...","description":"Mother of @jack...   Does that make
+        me the grandmother of Twitter?","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":2222,"friends_count":791,"listed_count":55,"created_at":"Mon
+        Apr 03 16:00:21 +0000 2006","favourites_count":13532,"utc_offset":-18000,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":26253,"lang":"en","status":{"created_at":"Sun
+        Apr 27 22:11:41 +0000 2014","id":460541821085442048,"id_str":"460541821085442048","text":"@andrew,
+        Birthday Dinner http:\/\/t.co\/oRppCjVytx","source":"\u003ca href=\"http:\/\/twitter.com\/download\/iphone\"
+        rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":60,"in_reply_to_user_id_str":"60","in_reply_to_screen_name":"andrew","geo":{"type":"Point","coordinates":[38.59340264,-90.21563944]},"coordinates":{"type":"Point","coordinates":[-90.21563944,38.59340264]},"place":{"id":"0570f015c264cbd9","url":"https:\/\/api.twitter.com\/1.1\/geo\/id\/0570f015c264cbd9.json","place_type":"city","name":"St
+        Louis","full_name":"St Louis","country_code":"US","country":"United States","contained_within":[],"bounding_box":{"type":"Polygon","coordinates":[[[-90.320464,38.533149],[-90.175132,38.533149],[-90.175132,38.774349],[-90.320464,38.774349]]]},"attributes":{}},"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[],"user_mentions":[{"screen_name":"andrew","name":"Andrew
+        Dorsey","id":60,"id_str":"60","indices":[0,7]}],"media":[{"id":460541817188933633,"id_str":"460541817188933633","indices":[25,47],"media_url":"http:\/\/pbs.twimg.com\/media\/BmQsV7nCYAEJIlY.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/BmQsV7nCYAEJIlY.jpg","url":"http:\/\/t.co\/oRppCjVytx","display_url":"pic.twitter.com\/oRppCjVytx","expanded_url":"http:\/\/twitter.com\/marciadorsey\/status\/460541821085442048\/photo\/1","type":"photo","sizes":{"thumb":{"w":150,"h":150,"resize":"crop"},"small":{"w":340,"h":453,"resize":"fit"},"medium":{"w":600,"h":800,"resize":"fit"},"large":{"w":768,"h":1024,"resize":"fit"}}}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"9AE4E8","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/3064144253\/8c2024335f14293cf8ff8a1dcc7223fa_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/3064144253\/8c2024335f14293cf8ff8a1dcc7223fa_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/76\/1355690124","profile_link_color":"0000FF","profile_sidebar_border_color":"87BC44","profile_sidebar_fill_color":"E0FF92","profile_text_color":"000000","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:30:21 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=70
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="0ef4c97504078756ed14c2c591b8fa9f",
+        oauth_signature="WCow52yZyjlKJFkf5kQJNevjVL8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398637825", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '878'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:30:26 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:30:26 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863782610469219; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:30:26 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '97'
+      X-Rate-Limit-Reset:
+      - '1398638428'
+      X-Transaction:
+      - b024b23e0b321db1
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":70,"id_str":"70","name":"Shannon","screen_name":"shannon","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":848,"friends_count":134,"listed_count":13,"created_at":"Sat
+        Apr 01 19:30:51 +0000 2006","favourites_count":15,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":1215,"lang":"en","status":{"created_at":"Tue
+        Apr 22 18:10:38 +0000 2014","id":458669220650553344,"id_str":"458669220650553344","text":"Watching
+        Memorial for #horstrechelbacher\nWho was a huge inspiration for me. I''m filled
+        with emotion, and gratitude for all you accomplished.","source":"web","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":4,"favorite_count":5,"entities":{"hashtags":[{"text":"horstrechelbacher","indices":[22,40]}],"symbols":[],"urls":[],"user_mentions":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"EDECE9","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme3\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme3\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/434424507223121921\/dnm4iHBY_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/434424507223121921\/dnm4iHBY_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/70\/1357242596","profile_link_color":"088253","profile_sidebar_border_color":"D3D2CF","profile_sidebar_fill_color":"E3E2DE","profile_text_color":"634047","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:30:26 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=96
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="1a2f363df9513782219ee4eae95e3cf2",
+        oauth_signature="dO6xlKaru%2FGLvzzd1146reuNAHA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398637826", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '495'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:30:27 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:30:27 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863782711339662; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:30:27 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '96'
+      X-Rate-Limit-Reset:
+      - '1398638428'
+      X-Transaction:
+      - b7894ef5de46848b
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":96,"id_str":"96","name":"Garo","screen_name":"garo","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":true,"followers_count":2,"friends_count":3,"listed_count":2,"created_at":"Sun
+        Apr 09 17:31:28 +0000 2006","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":25,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"9AE4E8","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_5_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_5_normal.png","profile_link_color":"0000FF","profile_sidebar_border_color":"87BC44","profile_sidebar_fill_color":"E0FF92","profile_text_color":"000000","profile_use_background_image":true,"default_profile":false,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:30:27 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=94
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="caae4d9afb4aee9ff2bf736bef64db24",
+        oauth_signature="FG4GC0fshdkrIF2Yg6qFBOQSGlM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398637827", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '869'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:30:28 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:30:28 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863782816836128; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:30:28 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '95'
+      X-Rate-Limit-Reset:
+      - '1398638428'
+      X-Transaction:
+      - d3e6901c28c7f86e
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":94,"id_str":"94","name":"Alissa","screen_name":"alissa","location":"San
+        Francisco, CA","description":"bipedal humanoid.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":9643,"friends_count":106,"listed_count":200,"created_at":"Sat
+        Apr 08 05:00:30 +0000 2006","favourites_count":3054,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":3325,"lang":"en","status":{"created_at":"Mon
+        Apr 14 22:31:33 +0000 2014","id":455835781391601664,"id_str":"455835781391601664","text":"@shinypb
+        Wow, fancy!","source":"\u003ca href=\"http:\/\/twitter.com\/download\/iphone\"
+        rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":455750423433859072,"in_reply_to_status_id_str":"455750423433859072","in_reply_to_user_id":13166,"in_reply_to_user_id_str":"13166","in_reply_to_screen_name":"shinypb","geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[],"user_mentions":[{"screen_name":"shinypb","name":"Mark","id":13166,"id_str":"13166","indices":[0,8]}]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/447830961\/hiding_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/447830961\/hiding_normal.jpg","profile_link_color":"928FFF","profile_sidebar_border_color":"4A487B","profile_sidebar_fill_color":"323232","profile_text_color":"6862E9","profile_use_background_image":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:30:28 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=102
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="fdffb09f1d3057eded028c01665fdf86",
+        oauth_signature="CWIVWdlet9nnB9pwWzFyhpAljoU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398637911", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '950'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:31:52 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:31:52 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863791246736365; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:31:52 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '74'
+      X-Rate-Limit-Reset:
+      - '1398638428'
+      X-Transaction:
+      - da32dc7174f90e24
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":102,"id_str":"102","name":"Dave","screen_name":"dave","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":2192,"friends_count":47,"listed_count":29,"created_at":"Thu
+        Apr 13 01:08:55 +0000 2006","favourites_count":5,"utc_offset":-14400,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":90,"lang":"en","status":{"created_at":"Wed
+        Feb 19 18:18:45 +0000 2014","id":436203214812106752,"id_str":"436203214812106752","text":"Summer''s
+        coming! Lancaster Farm Fresh Cooperative #CSA Available to drop-off sites
+        in DE DC MD NJ NY and PA. http:\/\/t.co\/Je2FvA5jZ8","source":"\u003ca href=\"http:\/\/twitter.com\/tweetbutton\"
+        rel=\"nofollow\"\u003eTweet Button\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":1,"favorite_count":1,"entities":{"hashtags":[{"text":"CSA","indices":[50,54]}],"symbols":[],"urls":[{"url":"http:\/\/t.co\/Je2FvA5jZ8","expanded_url":"http:\/\/lancasterfarmfresh.csasignup.com","display_url":"lancasterfarmfresh.csasignup.com","indices":[109,131]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C6E2EE","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme2\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme2\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1590115432\/image_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1590115432\/image_normal.jpg","profile_link_color":"1F98C7","profile_sidebar_border_color":"C6E2EE","profile_sidebar_fill_color":"DAECF4","profile_text_color":"663B12","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:31:52 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=43
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="da8382a388c6a17bb73b5c5cd26e51fc",
+        oauth_signature="Bohai5PHK36LPmvRfVDXGNXZLXY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638739", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:40 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:40 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863874043885962; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:40 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '155'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 15fa50e8dca0295c
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:40 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=44
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="806478ccdc8c9e30d8af8cc65a6b86b7",
+        oauth_signature="8o%2FP8B%2BA5UkFBfk2m7eonrp%2Br8E%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638740", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:41 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:41 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863874144408284; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:41 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '154'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - d14d6a2a2029cb75
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:41 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=45
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="5ec70e3d4573a08ea0f14d157459603a",
+        oauth_signature="R02691JTge2TRf0zbIYvjSt1%2BSI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638741", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:42 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:42 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863874259794009; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:42 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '153'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 84f224af14f05429
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:42 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=46
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="6ecced87f99d467cef51d36958797946",
+        oauth_signature="mz7piLZmR2P9MK%2FyXvXiPPzToL0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638742", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:43 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863874357129743; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:43 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '152'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 7a96520ce533d3cf
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:43 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=51
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="50f6f746899eb1243761fbaaa5ac6283",
+        oauth_signature="5a7spC9IchhbYAkD716tBB43p6s%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638743", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:44 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:44 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863874468661611; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:44 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '151'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - f78adc8862d5256d
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:44 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="7697957358802e5b93c3176e1fd6b2a5",
+        oauth_signature="re%2F%2BwvTTq1ZDiWAgXFZbyt1oaAc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638744", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:45 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:45 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863874587429634; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:45 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '150'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 90a9b246f7a11fae
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:46 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=49
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="0b4e3574d74fc908a66186450c7305a0",
+        oauth_signature="dEhI1Byvnn4jAQ9oAB%2FPkKOQHBw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638746", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:46 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:46 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863874692040939; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:46 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '149'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 372b86cd5edf713e
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:46 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=48
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="ba10d5d410025da483dedb0443d98694",
+        oauth_signature="x7Aox2domnsxcLiNgN1XqyVln2E%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638746", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:47 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:47 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863874790466696; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:47 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '148'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 2765ca222bc3ac76
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:47 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=71
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="69ea7e65e1a1c6310546c766d31dadb3",
+        oauth_signature="1VG1rY6QIoVBSzVcFXT90i6Ef%2B4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638747", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:48 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:48 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863874891208756; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:49 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '147'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - ef9076d350022b83
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:49 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=72
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="2e04dd066078bc69ceb8e00dd7b9452e",
+        oauth_signature="wduIzetHqvbfJ9sKf6hrueTM5mw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638749", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:50 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:50 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863875003243658; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:50 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '146'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 515ba295791868ff
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:50 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=73
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="ed87d8847843c15e5c0a77b7d5f24885",
+        oauth_signature="CFOKk5h90Mb%2BSfSz1o%2F8J8vqwq4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638750", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:51 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:51 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863875102687220; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:51 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '145'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 21496d3ac68a35e8
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:51 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=74
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="607f9af70eb2452b3414d3a0d6563d43",
+        oauth_signature="RAnQHUp9EDsnBHh7kcmeRcTlUuM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638751", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:52 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:52 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863875206859588; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:52 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '144'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 027b40a6034fc449
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:52 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=75
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="3d142ce41c853536cd9db3d4a008aa6c",
+        oauth_signature="dx8qpV5u3NUBDSyh6Jn%2Bcqkvq8Q%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638752", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:53 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:53 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863875304174736; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:53 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '143'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - fca8d303593c4015
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:53 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=74
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="1ec5920813c97845ebee528db3edb3da",
+        oauth_signature="%2Fn1vmxBO1OqrDJXleBo4y8dzJCk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638753", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:54 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:53 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863875398801024; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:54 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '142'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 77f4fe73a1a0afd8
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:54 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=73
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="9b822e175c03e2a9adeebde1f7cb35fb",
+        oauth_signature="KFlRo0d3NjIB%2B4iK4mZqaK4Cb48%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638754", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:54 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:54 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863875495907095; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:54 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '141'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 9c47f238c48b5f5d
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:55 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=72
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="5e7a05dda8a39c341d5d65d9f1b780fb",
+        oauth_signature="9voYDWIHlEew5%2B8MXb125eKuA00%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638755", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:55 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:55 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863875591387947; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:55 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '140'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - b962da38320656ec
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:55 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=71
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="13ce14a08dbd527f96619ac5b5888ac0",
+        oauth_signature="xsMFSoVSdiZURcwoKtY1Kr8ilIE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638755", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:56 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:56 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863875687458922; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:56 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '139'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - a838e98f5f4160b8
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:56 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=99
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="f77b1cdbe24802ff71be47082c20d284",
+        oauth_signature="ZlDwZy7wfu6PzZfcM7oVmDzbqi4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638756", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:57 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:57 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863875789547742; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:57 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '138'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - bbdfa33ebe46e974
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:57 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="061e4954317d15a00fa96cd9de229e71",
+        oauth_signature="5N4wSkJm7l5g7WlGdiumcc7H9w0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638757", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:58 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:58 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863875888506982; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:58 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '137'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - a2cf5056c0ad082b
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:58 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=101
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="43f3f5f17e0b853a5eecaca0334aba5a",
+        oauth_signature="70q9Gj9V1Hd82UzL9MrN7LjeF1o%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638758", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:45:59 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:45:59 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863875990847671; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:45:59 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '136'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - ed6be8f4f8586719
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:45:59 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="4c7d51ff2b2f38003a5abd26b8c7d011",
+        oauth_signature="EXY91tz%2Bjgai6CbCCY4qzwMVBxs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638760", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:00 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863876090432289; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:00 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '135'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 4ef30af0bbee34c3
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:00 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=99
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="a6f8920f67a1307fd936f44738c693ad",
+        oauth_signature="w71NRFVwKWNrvD24wxE5luhIjRo%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638760", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:01 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:01 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863876187267866; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:01 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '134'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - f29737ee4a73701d
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:01 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=98
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="8b00d74675bb0bd80811adba0fb58993",
+        oauth_signature="BSqzNwiVvLXJlsIPyzywJpAbuPI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638761", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:02 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:02 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863876285443859; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:02 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '133'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 34fb7a792569c55a
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:02 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=97
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="037ed4841134bbd74630226f58d777d1",
+        oauth_signature="tqQzLYYSmVRbwlhIfWpjLXeSnX8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638762", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:03 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:03 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863876384086768; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:03 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '132'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - babf841b2d8956fd
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:03 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=48
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="8c87453da5e58489d6b11d758138dc53",
+        oauth_signature="4DIDsfHF0Ym%2FnomVO9%2Fi%2BgnkBVk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638763", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:04 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:04 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863876485103956; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:04 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '131'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 8b4d9b4fa8bbc622
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:05 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=49
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="661558872ebac8a0fba137853514c644",
+        oauth_signature="qTzIMhGQRPbTTjDxVI56Q%2F87RSg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638765", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:05 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:05 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863876589449529; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:05 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '130'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - aacea2b9db1b54f3
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:06 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="36eee4777ff71362ee7ab800bec6b4d0",
+        oauth_signature="ASHsprtBDYhNFv0rdJC5kcUTRIk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638766", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:07 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:07 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863876693774867; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:07 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '129'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 53dc5a121a48e0d9
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:07 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=51
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="8e17013537dc1993bab8a2f348e7a876",
+        oauth_signature="Iy6wKQ7KGrrcEON2l1kJqDFtPm8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638767", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:08 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:08 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863876805089623; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:08 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '128'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 7fc6b721b8bafc4c
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:08 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=52
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="c472afe45f825470dee5272cd192c798",
+        oauth_signature="DqxK1id4kCci0RkVRzN2uJm2vIA%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638768", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '1011'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:09 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:09 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863876903756226; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:09 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '127'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - b484120663da4d9f
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":52,"id_str":"52","name":"Hook","screen_name":"hook","location":"San
+        Jose","description":"District Mgr with an insatiable appetite for learning.  Good
+        at consulting, sales and operations.  Love Irish pubs, U2, and my baby girl
+        Sophia.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":4671,"friends_count":81,"listed_count":15,"created_at":"Sat
+        Apr 01 01:55:21 +0000 2006","favourites_count":0,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":913,"lang":"en","status":{"created_at":"Sat
+        Nov 30 05:54:59 +0000 2013","id":406662625037008896,"id_str":"406662625037008896","text":"Gucci
+        handbags Stores,http:\/\/t.co\/A4Az5a5ix7 Newest Styles,72% Off,700+Selections,Free
+        Shipping!","source":"\u003ca href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eMobile
+        Web (M2)\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":1,"entities":{"hashtags":[],"symbols":[],"urls":[{"url":"http:\/\/t.co\/A4Az5a5ix7","expanded_url":"http:\/\/jhyr.tk\/gucci,2013","display_url":"jhyr.tk\/gucci,2013","indices":[22,44]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"ACDED6","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/14020102\/Scott_Twitter_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/14020102\/Scott_Twitter_normal.jpg","profile_link_color":"038543","profile_sidebar_border_color":"EEEEEE","profile_sidebar_fill_color":"F6F6F6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:09 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=71
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="0be625a0d6c62ecbdae32b833dd8433b",
+        oauth_signature="lAjZ1uHkI582cLPzsEjlgIk3t00%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638769", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:10 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:10 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863877008277907; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:10 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '126'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 987bea3f37376e62
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:10 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=72
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="49986faaa31d76c8db75b9fed4197cb0",
+        oauth_signature="gdEG%2Fy2PmhJV4O%2BFAcHNl%2BroaiI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638770", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:11 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:11 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863877106358879; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:11 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '125'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - b86a1fa8e289814b
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:11 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=73
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="39f58f53be58ffea30652027bff57521",
+        oauth_signature="q5KEx5H5aNkdLE7KfCbUlgpQhBU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638771", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:12 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:12 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863877221584013; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:12 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '124'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - b01de38846268faa
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:12 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=74
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="bc34c9848a2436b7edc65f8bdb69c806",
+        oauth_signature="HxXVXtpdUFoobXiCbXwaXLvWfWg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638772", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:13 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:13 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863877335166215; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:13 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '123'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 192fe1c8254af248
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:13 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=75
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="5ecd7f933e8dff1c5c8a141c161b4efa",
+        oauth_signature="7fYD3HAUU9yFHe08hmBce0nmcJg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638773", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:14 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:14 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863877430508442; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:14 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '122'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 5e63ba696089932c
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:14 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=76
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="1ca24c59157763c4b442fbf817290d83",
+        oauth_signature="qz%2FTR3TCRiteb2RKKAS2jTAWGNc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638774", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '1381'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:15 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:15 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863877532255193; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:15 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '121'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - bbf38ee96590a60b
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":76,"id_str":"76","name":"Marcia Dorsey","screen_name":"marciadorsey","location":"The
+        City of St. Louis, MO...","description":"Mother of @jack...   Does that make
+        me the grandmother of Twitter?","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":2222,"friends_count":791,"listed_count":55,"created_at":"Mon
+        Apr 03 16:00:21 +0000 2006","favourites_count":13532,"utc_offset":-18000,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":26253,"lang":"en","status":{"created_at":"Sun
+        Apr 27 22:11:41 +0000 2014","id":460541821085442048,"id_str":"460541821085442048","text":"@andrew,
+        Birthday Dinner http:\/\/t.co\/oRppCjVytx","source":"\u003ca href=\"http:\/\/twitter.com\/download\/iphone\"
+        rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":60,"in_reply_to_user_id_str":"60","in_reply_to_screen_name":"andrew","geo":{"type":"Point","coordinates":[38.59340264,-90.21563944]},"coordinates":{"type":"Point","coordinates":[-90.21563944,38.59340264]},"place":{"id":"0570f015c264cbd9","url":"https:\/\/api.twitter.com\/1.1\/geo\/id\/0570f015c264cbd9.json","place_type":"city","name":"St
+        Louis","full_name":"St Louis","country_code":"US","country":"United States","contained_within":[],"bounding_box":{"type":"Polygon","coordinates":[[[-90.320464,38.533149],[-90.175132,38.533149],[-90.175132,38.774349],[-90.320464,38.774349]]]},"attributes":{}},"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"urls":[],"user_mentions":[{"screen_name":"andrew","name":"Andrew
+        Dorsey","id":60,"id_str":"60","indices":[0,7]}],"media":[{"id":460541817188933633,"id_str":"460541817188933633","indices":[25,47],"media_url":"http:\/\/pbs.twimg.com\/media\/BmQsV7nCYAEJIlY.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/BmQsV7nCYAEJIlY.jpg","url":"http:\/\/t.co\/oRppCjVytx","display_url":"pic.twitter.com\/oRppCjVytx","expanded_url":"http:\/\/twitter.com\/marciadorsey\/status\/460541821085442048\/photo\/1","type":"photo","sizes":{"thumb":{"w":150,"h":150,"resize":"crop"},"small":{"w":340,"h":453,"resize":"fit"},"medium":{"w":600,"h":800,"resize":"fit"},"large":{"w":768,"h":1024,"resize":"fit"}}}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"9AE4E8","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/3064144253\/8c2024335f14293cf8ff8a1dcc7223fa_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/3064144253\/8c2024335f14293cf8ff8a1dcc7223fa_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/76\/1355690124","profile_link_color":"0000FF","profile_sidebar_border_color":"87BC44","profile_sidebar_fill_color":"E0FF92","profile_text_color":"000000","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:18 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=97
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="16c12ef19c9799ec8d708beaf3b72dc9",
+        oauth_signature="yNsmCzGGZ3lcEXxcmNiNyu9Ok6Q%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638778", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:24 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:24 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863878395191338; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:24 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '120'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 81e1376aeb8dd482
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:24 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=98
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="cd5c7fd0e5712d82bebfeba2bbbf6759",
+        oauth_signature="OaDKCKhjGQFJJOkIzh%2F9ax9W7rI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638784", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:25 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:25 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863878505984518; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:25 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '119'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 5db76b3ba22afbe6
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:25 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=99
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="93e944acac829d28e174173cd9ad3e6f",
+        oauth_signature="X11V%2Fg6Ffxd6wg%2FVUrVh81C3pCI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638785", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:26 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:26 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863878614316170; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:26 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '118'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - f1421ff6626e211c
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:26 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="e624376987849a4bc40e31aae83a4720",
+        oauth_signature="iJpbwpHPkdLxoB673mC%2BVeHMmaY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638786", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:27 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:27 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863878718716060; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:27 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '117'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - c8946e4a603acca6
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:27 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=101
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="d7e9a89b9f1def58ff1cf7599acab6c2",
+        oauth_signature="Ha2QNMTAZXeArjR6eGedSMa3C3A%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638787", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:28 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:28 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863878813723465; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:28 UTC
+      - lang=en
+      Status:
+      - 404 Not Found
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '116'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - bdd97d7c04f13725
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Sorry, that page does not exist","code":34}]}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:28 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=102
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="1b13047334936085be591ba82d0ee832",
+        oauth_signature="kY%2B6PDuTUAkHIulzIbIvO%2Fnkkb8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398638788", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '950'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sun, 27 Apr 2014 22:46:29 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Sun, 27 Apr 2014 22:46:29 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139863878916076376; Domain=.twitter.com; Path=/; Expires=Tue,
+        26-Apr-2016 22:46:29 UTC
+      - lang=en
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '115'
+      X-Rate-Limit-Reset:
+      - '1398639585'
+      X-Transaction:
+      - 9a42fd837226211e
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"id":102,"id_str":"102","name":"Dave","screen_name":"dave","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":2192,"friends_count":47,"listed_count":29,"created_at":"Thu
+        Apr 13 01:08:55 +0000 2006","favourites_count":5,"utc_offset":-14400,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":90,"lang":"en","status":{"created_at":"Wed
+        Feb 19 18:18:45 +0000 2014","id":436203214812106752,"id_str":"436203214812106752","text":"Summer''s
+        coming! Lancaster Farm Fresh Cooperative #CSA Available to drop-off sites
+        in DE DC MD NJ NY and PA. http:\/\/t.co\/Je2FvA5jZ8","source":"\u003ca href=\"http:\/\/twitter.com\/tweetbutton\"
+        rel=\"nofollow\"\u003eTweet Button\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":1,"favorite_count":1,"entities":{"hashtags":[{"text":"CSA","indices":[50,54]}],"symbols":[],"urls":[{"url":"http:\/\/t.co\/Je2FvA5jZ8","expanded_url":"http:\/\/lancasterfarmfresh.csasignup.com","display_url":"lancasterfarmfresh.csasignup.com","indices":[109,131]}],"user_mentions":[]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C6E2EE","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme2\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme2\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1590115432\/image_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1590115432\/image_normal.jpg","profile_link_color":"1F98C7","profile_sidebar_border_color":"C6E2EE","profile_sidebar_fill_color":"DAECF4","profile_text_color":"663B12","profile_use_background_image":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Sun, 27 Apr 2014 22:46:29 GMT
+recorded_with: VCR 2.9.0

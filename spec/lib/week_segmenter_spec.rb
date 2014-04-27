@@ -29,9 +29,44 @@ describe WeekSegmenter, vcr: true do
   context 'when accessing twitter' do
 
     it "should fetch users" do
-      WeekSegmenter.client.user(20).screen_name.should eq 'ev'
+      user = WeekSegmenter.client.user(20)
+      user.screen_name.should eq 'ev'
     end
 
+  end
+
+  context 'when segmenting weeks' do
+
+    let(:initial_date) { Date.parse('2006/03/21') }
+    let(:first_user) { { user_id: 20, signup_date: initial_date } }
+    let(:last_user) { { user_id: 107, signup_date: Date.parse('2006/04/14') } }
+
+
+    it "should find users for each week" do
+      users = WeekSegmenter.find first_user, last_user
+      users.should have(3).items
+      users.each_with_index do |u, i|
+        u.created_at.should be < (initial_date + i.week).to_datetime.end_of_week
+        next_twitter_user(u.id).created_at > (initial_date + i.week).to_datetime.end_of_week
+      end
+    end
+
+  end
+
+  def next_twitter_user user_id
+
+    user = nil
+    user_id += 1
+
+    while user.nil?
+      begin
+        user =  WeekSegmenter.client.user(user_id)
+      rescue Twitter::Error::NotFound
+        user_id +=1
+      end
+    end
+
+    user
   end
 
 end
