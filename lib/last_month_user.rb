@@ -1,9 +1,22 @@
+require 'yaml'
+require 'twitter'
 require 'active_support/all'
 
 # This class will attempt to search the last user signed up in Twitter for a given month.
 # All this class needs is a user from each month and then it will search on twitter for a
 # Twitter user wich was signed up that month
 class LastMonthUser
+
+  # Singleton method for getting twitter client according to the configuration in the YML file
+  def self.client
+    @@client ||= Twitter::REST::Client.new do |config|
+      yml_config = YAML.load_file( File.expand_path('../config/twitter.yml', File.dirname(__FILE__)) )['twitter'].symbolize_keys
+      config.consumer_key        = yml_config[:consumer_key]
+      config.consumer_secret     = yml_config[:consumer_secret]
+      config.access_token        = yml_config[:access_token]
+      config.access_token_secret = yml_config[:access_token_secret]
+    end
+  end
 
   # This method implements the actual search. It receives two users, one for each month.
   # Those users are just hashes with a user_id and a date
