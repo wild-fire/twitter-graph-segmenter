@@ -21,7 +21,7 @@ RSpec.configure do |config|
     c.filter_sensitive_data('<CONSUMER KEY>') { yml_config['consumer_key'] }
     c.filter_sensitive_data('<ACCESS TOKEN>') { yml_config['access_token'] }
     c.before_playback do |interaction|
-      interaction.ignore! if interaction.response.status.code >= 400
+      interaction.ignore! if interaction.response.status.code >= 400 && interaction.response.status.code != 404
     end
     c.default_cassette_options = { :record => :new_episodes }
   end

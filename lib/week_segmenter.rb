@@ -50,18 +50,18 @@ class WeekSegmenter
       # This variable will control which side of the end of the week are we
       past_week = true
       # signups_rate will be our increment variable so we are going to decrement it until we find the last user of the week
-      while signups_rate > 1
+      while signups_rate >= 1
 
         guess = guess.to_i
         # We get the information about the currently guessed user
         begin
           log "-- Trying #{guess}"
           user = client.user(guess)
-          log "-- User #{guess} (#{user.screen_name}) created at: #{user.created_at}"
+          log "-- Rate #{signups_rate} - User #{guess} (#{user.screen_name}) created at: #{user.created_at}"
 
           case
             # If we are still in the past week, then we are going to find another future user
-            when past_week && (user.created_at < end_of_week)
+            when past_week && (user.created_at <= end_of_week)
               guess += signups_rate
             # If we are in the next week, and the user is from the next week, then we get a past user
             when !past_week && (user.created_at > end_of_week)
@@ -69,17 +69,21 @@ class WeekSegmenter
             # If we are in the past week BUT the user is from the next week, then we cut signups rate
             # in half and search in the oposite direction
             when past_week && (user.created_at > end_of_week)
-              signups_rate = (signups_rate/2).ceil
+              # WAIT!! if the user is in the "next" side we can't cut the signups rate to 0 or
+              # it would mean that the last user of a week is in fact the first user of the next one
+              signups_rate = (signups_rate/2).ceil unless signups_rate == 1
               past_week = false
               guess -= signups_rate
             # If we are in the next week BUT the user is from the past one, then we cut signups rate
             # in half and search in the oposite direction
-            when !past_week && (user.created_at < end_of_week)
+            when !past_week && (user.created_at <= end_of_week)
               signups_rate = (signups_rate/2).ceil
               past_week = true
               guess += signups_rate
           end
         rescue Twitter::Error::NotFound
+          guess += past_week ? 1 : -1
+        rescue Twitter::Error::Forbidden
           guess += past_week ? 1 : -1
         end
       end

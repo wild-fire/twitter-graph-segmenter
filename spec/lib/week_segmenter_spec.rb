@@ -37,17 +37,19 @@ describe WeekSegmenter, vcr: true do
 
   context 'when segmenting weeks' do
 
-    let(:initial_date) { Date.parse('2006/03/21') }
-    let(:first_user) { { user_id: 20, signup_date: initial_date } }
-    let(:last_user) { { user_id: 107, signup_date: Date.parse('2006/04/14') } }
+    let(:start_date) { Date.parse('2009/06/30') }
+    let(:end_date) { Date.parse('2009/07/29') }
+    let(:first_user) { { user_id: 52228080, signup_date: start_date } }
+    let(:last_user) { { user_id: 61115944, signup_date: end_date } }
 
 
     it "should find users for each week" do
       users = WeekSegmenter.find first_user, last_user
-      users.should have(3).items
+      users.should have(((end_date - start_date)/7).floor ).items
+
       users.each_with_index do |u, i|
-        u.created_at.should be < (initial_date + i.week).to_datetime.end_of_week
-        next_twitter_user(u.id).created_at > (initial_date + i.week).to_datetime.end_of_week
+        u.created_at.should be <= (start_date + i.week).to_datetime.end_of_week
+        next_twitter_user(u.id).created_at > (start_date + i.week).to_datetime.end_of_week
       end
     end
 
