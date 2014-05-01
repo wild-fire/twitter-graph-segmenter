@@ -6,6 +6,7 @@ gem "twitter"
 gem 'commander'
 gem "vcr"
 gem "webmock"
+gem 'debugger'
 
 group :test do
   gem "rspec"
