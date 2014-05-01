@@ -10223,408 +10223,6 @@ http_interactions:
   recorded_at: Mon, 28 Apr 2014 21:40:35 GMT
 - request:
     method: get
-    uri: https://api.twitter.com/1.1/users/show.json?user_id=54052582
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      User-Agent:
-      - Twitter Ruby Gem 5.8.0
-      Authorization:
-      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="6a9c1767ec7dc2e35c03fb8f008d3ee7",
-        oauth_signature="8kB7m0tUuIVJ0T4TmuT%2FruTk9%2B0%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1398721375", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      Cache-Control:
-      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
-      Content-Length:
-      - '86'
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Mon, 28 Apr 2014 21:42:55 GMT
-      Expires:
-      - Tue, 31 Mar 1981 05:00:00 GMT
-      Last-Modified:
-      - Mon, 28 Apr 2014 21:42:55 GMT
-      Pragma:
-      - no-cache
-      Server:
-      - tfe
-      Set-Cookie:
-      - guest_id=v1%3A139872137591041399; Domain=.twitter.com; Path=/; Expires=Wed,
-        27-Apr-2016 21:42:55 UTC
-      - lang=en
-      Status:
-      - 403 Forbidden
-      Strict-Transport-Security:
-      - max-age=631138519
-      X-Access-Level:
-      - read
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Rate-Limit-Limit:
-      - '180'
-      X-Rate-Limit-Remaining:
-      - '155'
-      X-Rate-Limit-Reset:
-      - '1398722107'
-      X-Transaction:
-      - 3d1cecd55b751ea9
-      X-Xss-Protection:
-      - 1; mode=block
-    body:
-      encoding: UTF-8
-      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
-    http_version: 
-  recorded_at: Mon, 28 Apr 2014 21:42:56 GMT
-- request:
-    method: get
-    uri: https://api.twitter.com/1.1/users/show.json?user_id=54048095
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      User-Agent:
-      - Twitter Ruby Gem 5.8.0
-      Authorization:
-      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="0675bff51f42dae85a2691ebc183c98a",
-        oauth_signature="361I6GtIpon6kBO8KX%2FVIUNlTNQ%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1398721376", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      Cache-Control:
-      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
-      Content-Length:
-      - '86'
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Mon, 28 Apr 2014 21:42:57 GMT
-      Expires:
-      - Tue, 31 Mar 1981 05:00:00 GMT
-      Last-Modified:
-      - Mon, 28 Apr 2014 21:42:57 GMT
-      Pragma:
-      - no-cache
-      Server:
-      - tfe
-      Set-Cookie:
-      - guest_id=v1%3A139872137706743456; Domain=.twitter.com; Path=/; Expires=Wed,
-        27-Apr-2016 21:42:57 UTC
-      - lang=en
-      Status:
-      - 403 Forbidden
-      Strict-Transport-Security:
-      - max-age=631138519
-      X-Access-Level:
-      - read
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Rate-Limit-Limit:
-      - '180'
-      X-Rate-Limit-Remaining:
-      - '154'
-      X-Rate-Limit-Reset:
-      - '1398722107'
-      X-Transaction:
-      - 17a68d6ef1ed334c
-      X-Xss-Protection:
-      - 1; mode=block
-    body:
-      encoding: UTF-8
-      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
-    http_version: 
-  recorded_at: Mon, 28 Apr 2014 21:42:57 GMT
-- request:
-    method: get
-    uri: https://api.twitter.com/1.1/users/show.json?user_id=56227867
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      User-Agent:
-      - Twitter Ruby Gem 5.8.0
-      Authorization:
-      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="908db5145564e334fbe17276d8482a28",
-        oauth_signature="Mq7mlZWtiEzbFBH0Pe7Y83W7RG8%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1398721377", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      Cache-Control:
-      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
-      Content-Length:
-      - '86'
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Mon, 28 Apr 2014 21:42:58 GMT
-      Expires:
-      - Tue, 31 Mar 1981 05:00:00 GMT
-      Last-Modified:
-      - Mon, 28 Apr 2014 21:42:58 GMT
-      Pragma:
-      - no-cache
-      Server:
-      - tfe
-      Set-Cookie:
-      - guest_id=v1%3A139872137853117557; Domain=.twitter.com; Path=/; Expires=Wed,
-        27-Apr-2016 21:42:58 UTC
-      - lang=en
-      Status:
-      - 403 Forbidden
-      Strict-Transport-Security:
-      - max-age=631138519
-      X-Access-Level:
-      - read
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Rate-Limit-Limit:
-      - '180'
-      X-Rate-Limit-Remaining:
-      - '153'
-      X-Rate-Limit-Reset:
-      - '1398722107'
-      X-Transaction:
-      - 8d08a3124e1e8144
-      X-Xss-Protection:
-      - 1; mode=block
-    body:
-      encoding: UTF-8
-      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
-    http_version: 
-  recorded_at: Mon, 28 Apr 2014 21:42:58 GMT
-- request:
-    method: get
-    uri: https://api.twitter.com/1.1/users/show.json?user_id=56228766
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      User-Agent:
-      - Twitter Ruby Gem 5.8.0
-      Authorization:
-      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="a030cc6c50c33330f962f0a40e9dd1c0",
-        oauth_signature="tN%2BdQlitnHb%2BkPhFq8e%2FM40qgek%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1398721378", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      Cache-Control:
-      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
-      Content-Length:
-      - '86'
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Mon, 28 Apr 2014 21:42:59 GMT
-      Expires:
-      - Tue, 31 Mar 1981 05:00:00 GMT
-      Last-Modified:
-      - Mon, 28 Apr 2014 21:42:59 GMT
-      Pragma:
-      - no-cache
-      Server:
-      - tfe
-      Set-Cookie:
-      - guest_id=v1%3A139872137956991436; Domain=.twitter.com; Path=/; Expires=Wed,
-        27-Apr-2016 21:42:59 UTC
-      - lang=en
-      Status:
-      - 403 Forbidden
-      Strict-Transport-Security:
-      - max-age=631138519
-      X-Access-Level:
-      - read
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Rate-Limit-Limit:
-      - '180'
-      X-Rate-Limit-Remaining:
-      - '152'
-      X-Rate-Limit-Reset:
-      - '1398722107'
-      X-Transaction:
-      - 5e5efc12abda4c66
-      X-Xss-Protection:
-      - 1; mode=block
-    body:
-      encoding: UTF-8
-      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
-    http_version: 
-  recorded_at: Mon, 28 Apr 2014 21:42:59 GMT
-- request:
-    method: get
-    uri: https://api.twitter.com/1.1/users/show.json?user_id=56229009
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      User-Agent:
-      - Twitter Ruby Gem 5.8.0
-      Authorization:
-      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="bd8d1ca2fbeb55602c06a2c5cd8dee41",
-        oauth_signature="yB5iiCcLZBmY%2FOzK5oWE4LUTQq8%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1398721380", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      Cache-Control:
-      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
-      Content-Length:
-      - '86'
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Mon, 28 Apr 2014 21:43:00 GMT
-      Expires:
-      - Tue, 31 Mar 1981 05:00:00 GMT
-      Last-Modified:
-      - Mon, 28 Apr 2014 21:43:00 GMT
-      Pragma:
-      - no-cache
-      Server:
-      - tfe
-      Set-Cookie:
-      - guest_id=v1%3A139872138084711134; Domain=.twitter.com; Path=/; Expires=Wed,
-        27-Apr-2016 21:43:00 UTC
-      - lang=en
-      Status:
-      - 403 Forbidden
-      Strict-Transport-Security:
-      - max-age=631138519
-      X-Access-Level:
-      - read
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Rate-Limit-Limit:
-      - '180'
-      X-Rate-Limit-Remaining:
-      - '151'
-      X-Rate-Limit-Reset:
-      - '1398722107'
-      X-Transaction:
-      - 8f79dab085731d90
-      X-Xss-Protection:
-      - 1; mode=block
-    body:
-      encoding: UTF-8
-      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
-    http_version: 
-  recorded_at: Mon, 28 Apr 2014 21:43:01 GMT
-- request:
-    method: get
-    uri: https://api.twitter.com/1.1/users/show.json?user_id=58281038
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      User-Agent:
-      - Twitter Ruby Gem 5.8.0
-      Authorization:
-      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="50dd52fc2a49db27b4677f04094a6529",
-        oauth_signature="kT5phqWahbtpa2oJIB3pYhUd1Lw%3D", oauth_signature_method="HMAC-SHA1",
-        oauth_timestamp="1398721381", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      Cache-Control:
-      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
-      Content-Length:
-      - '86'
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Mon, 28 Apr 2014 21:43:02 GMT
-      Expires:
-      - Tue, 31 Mar 1981 05:00:00 GMT
-      Last-Modified:
-      - Mon, 28 Apr 2014 21:43:02 GMT
-      Pragma:
-      - no-cache
-      Server:
-      - tfe
-      Set-Cookie:
-      - guest_id=v1%3A139872138206014806; Domain=.twitter.com; Path=/; Expires=Wed,
-        27-Apr-2016 21:43:02 UTC
-      - lang=en
-      Status:
-      - 403 Forbidden
-      Strict-Transport-Security:
-      - max-age=631138519
-      X-Access-Level:
-      - read
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Rate-Limit-Limit:
-      - '180'
-      X-Rate-Limit-Remaining:
-      - '150'
-      X-Rate-Limit-Reset:
-      - '1398722107'
-      X-Transaction:
-      - 2c05c3b1115a91d9
-      X-Xss-Protection:
-      - 1; mode=block
-    body:
-      encoding: UTF-8
-      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
-    http_version: 
-  recorded_at: Mon, 28 Apr 2014 21:43:02 GMT
-- request:
-    method: get
     uri: https://api.twitter.com/1.1/users/show.json?user_id=54047812
     body:
       encoding: US-ASCII
@@ -10967,4 +10565,406 @@ http_interactions:
         Jul 27 00:00:00 +0000 2009","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":0,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_3_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_3_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false}'
     http_version: 
   recorded_at: Mon, 28 Apr 2014 21:43:08 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=54052582
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="1c51723f2be0a39e2fc6c5c37812e3c9",
+        oauth_signature="n0xpDuOQ0DKn2gdyJ63Jp7RAeOE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398960551", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '86'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 01 May 2014 16:09:12 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 01 May 2014 16:09:12 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139896055279954176; Domain=.twitter.com; Path=/; Expires=Sat,
+        30-Apr-2016 16:09:12 UTC
+      - lang=en
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '57'
+      X-Rate-Limit-Reset:
+      - '1398960715'
+      X-Transaction:
+      - a4c2f5cd46fc70f4
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
+    http_version: 
+  recorded_at: Thu, 01 May 2014 16:09:12 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=54048095
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="c82fbb5626bcf95f0a019363dd2a1ff9",
+        oauth_signature="RV%2BsKl%2FdKrNz%2BYtk%2Fw6eg%2BrUNww%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398960553", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '86'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 01 May 2014 16:09:18 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 01 May 2014 16:09:18 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139896055891667728; Domain=.twitter.com; Path=/; Expires=Sat,
+        30-Apr-2016 16:09:18 UTC
+      - lang=en
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '56'
+      X-Rate-Limit-Reset:
+      - '1398960715'
+      X-Transaction:
+      - 2315d6ed299cdde0
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
+    http_version: 
+  recorded_at: Thu, 01 May 2014 16:09:19 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=56227867
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="5ee393102e6a500a93fa5bbf550d1a39",
+        oauth_signature="KmUp7oG8GQYt9C4jQD6f54SxOY4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398960559", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '86'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 01 May 2014 16:09:20 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 01 May 2014 16:09:20 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139896056043825755; Domain=.twitter.com; Path=/; Expires=Sat,
+        30-Apr-2016 16:09:20 UTC
+      - lang=en
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '55'
+      X-Rate-Limit-Reset:
+      - '1398960715'
+      X-Transaction:
+      - a9486dd7d01a58ed
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
+    http_version: 
+  recorded_at: Thu, 01 May 2014 16:09:20 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=56228766
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="17458c7b2ad6b61af2ec3c648e493cbe",
+        oauth_signature="TpHGjfH5YOGbQUUM0QsE42Z%2BW6I%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398960560", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '86'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 01 May 2014 16:09:26 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 01 May 2014 16:09:26 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139896056661408016; Domain=.twitter.com; Path=/; Expires=Sat,
+        30-Apr-2016 16:09:26 UTC
+      - lang=en
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '54'
+      X-Rate-Limit-Reset:
+      - '1398960715'
+      X-Transaction:
+      - ea4b2cf42cf1f0d6
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
+    http_version: 
+  recorded_at: Thu, 01 May 2014 16:09:26 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=56229009
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="ed4f19fd2c90e38765708d1d4183f36e",
+        oauth_signature="6n2aXrqCnG%2FpZlNj%2Bey1wCOC71s%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398960566", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '86'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 01 May 2014 16:09:32 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 01 May 2014 16:09:32 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139896057277910206; Domain=.twitter.com; Path=/; Expires=Sat,
+        30-Apr-2016 16:09:32 UTC
+      - lang=en
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '53'
+      X-Rate-Limit-Reset:
+      - '1398960715'
+      X-Transaction:
+      - 000462c4b9519a06
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
+    http_version: 
+  recorded_at: Thu, 01 May 2014 16:09:32 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/users/show.json?user_id=58281038
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 5.8.0
+      Authorization:
+      - OAuth oauth_consumer_key="<CONSUMER KEY>", oauth_nonce="626dbe6bd25841b4d6d21c16dded8ebc",
+        oauth_signature="qolVz5%2BiZDWdy%2FHKLJJ2OwdxXzs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1398960573", oauth_token="<ACCESS TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Length:
+      - '86'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 01 May 2014 16:09:34 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 01 May 2014 16:09:34 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tfe
+      Set-Cookie:
+      - guest_id=v1%3A139896057401136880; Domain=.twitter.com; Path=/; Expires=Sat,
+        30-Apr-2016 16:09:34 UTC
+      - lang=en
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '180'
+      X-Rate-Limit-Remaining:
+      - '52'
+      X-Rate-Limit-Reset:
+      - '1398960715'
+      X-Transaction:
+      - 260e0f646177020b
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":63,"message":"User has been suspended."}]}'
+    http_version: 
+  recorded_at: Thu, 01 May 2014 16:09:34 GMT
 recorded_with: VCR 2.9.0
