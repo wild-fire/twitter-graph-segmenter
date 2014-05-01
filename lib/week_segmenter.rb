@@ -6,6 +6,8 @@ require 'active_support/all'
 # For every week between the two signup dates it will find each last signed up user
 class WeekSegmenter
 
+  @@tried_users = {}
+
   def self.log message
     puts "[Week Segmenter] #{message}"
   end
@@ -61,7 +63,20 @@ class WeekSegmenter
         # We get the information about the currently guessed user
         begin
           log "-- Trying #{guess}"
-          user = client.user(guess)
+          user = nil
+          if @@tried_users.has_key? guess
+            user = @@tried_users[guess]
+            while user.nil? && @@tried_users.has_key?(guess+1)
+              guess += past_week ? 1 : -1
+              user = @@tried_users[guess]
+            end
+          end
+
+          if user.nil?
+            user = client.user(guess)
+            @@tried_users[guess] = user
+          end
+
           log "-- Rate #{signups_rate} - User #{guess} (#{user.screen_name}) created at: #{user.created_at}"
 
           case
@@ -87,8 +102,10 @@ class WeekSegmenter
               guess += signups_rate
           end
         rescue Twitter::Error::NotFound
+          @@tried_users[guess] = nil
           guess += past_week ? 1 : -1
         rescue Twitter::Error::Forbidden
+          @@tried_users[guess] = nil
           guess += past_week ? 1 : -1
         end
       end
