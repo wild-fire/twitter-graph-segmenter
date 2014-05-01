@@ -21,6 +21,11 @@ class WeekSegmenter
     end
   end
 
+  def self.rate_limit_info
+    rate_info = WeekSegmenter.client.get '/1.1/application/rate_limit_status.json?resources=users'
+    rate_info.body[:resources][:users][:"/users/show/:id"]
+  end
+
   # This method implements the actual search. It receives two users, just hashes with a user_id and a date
   # (i.e. { user_id: 20, signup_date: Date.parse('2006/03/21')})
   # Then it will try to find the last user signed up on each week between the sign up date from the two users
