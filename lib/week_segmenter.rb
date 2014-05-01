@@ -7,6 +7,7 @@ require 'active_support/all'
 class WeekSegmenter
 
   @@tried_users = {}
+  @@remaining_calls = 0
 
   def self.log message
     puts "[Week Segmenter] #{message}"
@@ -21,11 +22,26 @@ class WeekSegmenter
       config.access_token        = yml_config[:access_token]
       config.access_token_secret = yml_config[:access_token_secret]
     end
+    @@remaining_calls -= 1
+    @@client
   end
 
   def self.rate_limit_info
     rate_info = WeekSegmenter.client.get '/1.1/application/rate_limit_status.json?resources=users'
     rate_info.body[:resources][:users][:"/users/show/:id"]
+  end
+
+  def self.sleep_until_rate_limit
+    if @@remaining_calls < 5
+      rate_info = rate_limit_info
+      if rate_info[:remaining] < 5
+        log "Now I'm going to sleep until I have enough rate (#{rate_info[:reset]} - #{Time.at(rate_info[:reset]) - Time.now} seconds)"
+        sleep(Time.at(rate_info[:reset]) - Time.now)
+      else
+        log "Remaining calls #{rate_info[:remaining]}"
+      end
+      @@remaining_calls = [20, rate_info[:remaining]/2].min
+    end
   end
 
   # This method implements the actual search. It receives two users, just hashes with a user_id and a date
@@ -73,6 +89,7 @@ class WeekSegmenter
           end
 
           if user.nil?
+            sleep_until_rate_limit
             user = client.user(guess)
             @@tried_users[guess] = user
           end

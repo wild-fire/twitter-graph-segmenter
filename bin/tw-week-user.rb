@@ -4,6 +4,7 @@ require 'rubygems'
 require 'commander/import'
 require 'lib/week_segmenter'
 require 'vcr'
+require 'debugger'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'data/vcr'
@@ -15,6 +16,7 @@ VCR.configure do |c|
 
   # Don't playback transient errors
   c.before_playback do |interaction|
+    interaction.ignore! if interaction.request.uri.include? '/1.1/application/rate_limit_status.json?resources=users'
     interaction.ignore! if interaction.response.status.code >= 400 && interaction.response.status.code != 404
   end
 
