@@ -128,12 +128,15 @@ class WeekSegmenter
               past_week = true
               guess += signups_rate
           end
-        rescue Twitter::Error::NotFound
+        rescue Twitter::Error::NotFound, Twitter::Error::Forbidden
           @@tried_users[guess] = nil
-          guess += past_week ? 1 : -1
-        rescue Twitter::Error::Forbidden
-          @@tried_users[guess] = nil
-          guess += past_week ? 1 : -1
+          guess += past_week ? signups_rate : -signups_rate
+          if !past_week && guess < 1
+            guess = -guess
+            signups_rate = (signups_rate/2).ceil
+            past_week = true
+          end
+        rescue Twitter::Error::RequestTimeout
         end
       end
 
