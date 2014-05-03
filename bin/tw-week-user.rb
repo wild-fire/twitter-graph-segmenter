@@ -25,10 +25,10 @@ VCR.configure do |c|
 end
 
 program :version, '0.0.1'
-program :description, 'This program takes two twitter users, with their signup date and find the las user of each week between the dates'
+program :description, 'This program segments a period of times  '
 
 command :find do |c|
-  c.syntax = 'tw-week-user find [options]'
+  c.syntax = 'tw-week-user find username1 username2'
   c.summary = 'Find last users of the week between the two users'
   c.description = 'This command takes two users and their signup dates and find the lasr user of the week for each week between the two dates'
   c.example 'Find all the users between "pud" and "goldman" users' , 'find pud goldman'
@@ -51,3 +51,41 @@ command :find do |c|
   end
 end
 
+
+command :file do |c|
+  c.syntax = 'tw-week-user file path/to/file path/to/output/file'
+  c.summary = 'Segments a period of time using users extracted from a TSV file'
+  c.description = 'This command takes a file in TSV format with two columns, the user id on twitter and the creation date, ordered by the creation date (sooner first). Then finds the last user of every weeb from the first creation date to the last one'
+  c.action do |args, options|
+    rate_limit_info = WeekSegmenter.rate_limit_info
+    puts "Remaining #{rate_limit_info[:remaining]} of #{rate_limit_info[:limit]} until #{Time.at rate_limit_info[:reset]}"
+
+    tsv_file = File.open args[0]
+    previous_user = nil
+    next_user = nil
+
+    VCR.use_cassette('users_profiles') do
+      tsv_file.each_line do |l|
+        user_id, signup_date = l.split("\t")
+        previous_user = next_user
+        next_user = { user_id: user_id.to_i, signup_date: Date.parse(signup_date) }
+
+        unless previous_user.nil?
+          users = WeekSegmenter.find(previous_user, next_user)
+
+          output_file = File.open args[1], 'a'
+
+          users.each do |u|
+            puts "#{u.screen_name} signed up at #{u.created_at}"
+            output_file << "#{u.id}\t#{u.screen_name}\t#{u.created_at}\n"
+          end
+
+          output_file.close
+        end
+      end
+
+    end
+    rate_limit_info = WeekSegmenter.rate_limit_info
+    puts "Remaining #{rate_limit_info[:remaining]} of #{rate_limit_info[:limit]} until #{Time.at rate_limit_info[:reset]}"
+  end
+end
