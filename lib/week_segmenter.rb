@@ -56,15 +56,24 @@ class WeekSegmenter
     # If there's no weeks between the users, we return
     return [] unless weeks_between_users > 1
 
+    # We try to get last user for the first week
+    end_of_week = first_user[:signup_date].to_datetime.end_of_week
+
+    # Now we get the first guess and the users' signup rate
+    guess, global_signups_rate = initial_user_id_guess first_user, last_user, end_of_week
+
     # From 1 to the numbers of week
     (1..weeks_between_users).map do |week|
-      # We try to get last user for this week
-      end_of_week = (first_user[:signup_date] + ((week-1)*7).days).to_datetime.end_of_week
 
-      # Now we get the first guess and the users' signup rate
-      guess, signups_rate = initial_user_id_guess first_user, last_user, end_of_week
+      log "Searching user for week ending #{end_of_week} with #{global_signups_rate} new users per day"
 
-      log "Searching user for week ending #{end_of_week} with #{signups_rate} new users per day"
+      # If we are not in the firest week we adjust the guess based on
+      # the last user of the previous week. This way, if our initial guess was too wrong
+      # we will now work with a more accurated guess
+      unless week == 1
+        guess += global_signups_rate * 7
+        end_of_week += 7.days
+      end
 
       # Here we are going to store the result
       user = nil
@@ -73,6 +82,7 @@ class WeekSegmenter
       # This variable will control which side of the end of the week are we
       past_week = true
       # signups_rate will be our increment variable so we are going to decrement it until we find the last user of the week
+      signups_rate = global_signups_rate
       while signups_rate >= 1
 
         guess = guess.to_i
