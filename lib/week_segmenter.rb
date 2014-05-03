@@ -34,11 +34,11 @@ class WeekSegmenter
   def self.sleep_until_rate_limit
     if @@remaining_calls < 5
       rate_info = rate_limit_info
-      if rate_info[:remaining] < 5
+      if rate_info[:remaining] < 20
         log "Now I'm going to sleep until I have enough rate (#{rate_info[:reset]} - #{Time.at(rate_info[:reset]) - Time.now} seconds)"
         sleep(Time.at(rate_info[:reset]) - Time.now)
       else
-        log "Remaining calls #{rate_info[:remaining]}"
+        log "Remaining calls #{rate_info[:remaining]} until #{Time.at rate_info[:reset]}"
       end
       @@remaining_calls = [20, rate_info[:remaining]/2].min
     end
