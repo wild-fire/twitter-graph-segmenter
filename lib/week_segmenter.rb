@@ -6,6 +6,8 @@ require 'active_support/all'
 # For every week between the two signup dates it will find each last signed up user
 class WeekSegmenter
 
+  cattr_accessor :beacons
+  @@beacons = []
   @@tried_users = {}
   @@remaining_calls = 0
 
@@ -102,6 +104,7 @@ class WeekSegmenter
             sleep_until_rate_limit
             user = client.user(guess)
             @@tried_users[guess] = user
+            @@beacons << { user_id: user.id, signup_date: user.created_at }
           end
 
           log "-- Rate #{signups_rate} - User #{guess} (#{user.screen_name}) created at: #{user.created_at}"
@@ -131,10 +134,16 @@ class WeekSegmenter
         rescue Twitter::Error::NotFound, Twitter::Error::Forbidden
           @@tried_users[guess] = nil
           guess += past_week ? signups_rate : -signups_rate
-          if !past_week && guess < 1
-            guess = -guess
-            signups_rate = (signups_rate/2).ceil
-            past_week = true
+          # If we get lower than one of our beacons from the previous week then turn around and search again
+          beacon = if !past_week
+            @@beacons.detect{|b| b[:user_id] > guess && b[:signup_date] <= end_of_week }
+          # If we get further than one of our beacons from the next week, then turn around and search again, again
+          else
+            @@beacons.detect{|b| b[:user_id] < guess && b[:signup_date] > end_of_week }
+          end
+          unless beacon.nil?
+            log "-- User not found but beacon #{beacon[:user_id]} created at #{beacon[:signup_date] } found"
+            guess = beacon[:user_id]
           end
         rescue Twitter::Error::RequestTimeout
         end
