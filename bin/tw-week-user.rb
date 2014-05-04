@@ -53,7 +53,7 @@ end
 
 
 command :file do |c|
-  c.syntax = 'tw-week-user file path/to/file path/to/output/file'
+  c.syntax = 'tw-week-user file path/to/file path/to/output/file [path/to/input/beacons/file] [path/to/output/beacons/file]'
   c.summary = 'Segments a period of time using users extracted from a TSV file'
   c.description = 'This command takes a file in TSV format with two columns, the user id on twitter and the creation date, ordered by the creation date (sooner first). Then finds the last user of every weeb from the first creation date to the last one'
   c.action do |args, options|
@@ -63,6 +63,16 @@ command :file do |c|
     tsv_file = File.open args[0]
     previous_user = nil
     next_user = nil
+
+    if args.length > 2
+      beacons_file = File.open args[2]
+      beacons = []
+      beacons_file.each_line do |l|
+        user_id, signup_date = l.split("\t")
+        beacons << { user_id: user_id.to_i, signup_date: DateTime.parse(signup_date) }
+      end
+      WeekSegmenter.beacons = beacons.dup
+    end
 
     VCR.use_cassette('users_profiles') do
       tsv_file.each_line do |l|
