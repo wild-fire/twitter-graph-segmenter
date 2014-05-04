@@ -34,11 +34,11 @@ class WeekSegmenter
   def self.sleep_until_rate_limit
     if @@remaining_calls < 5
       rate_info = rate_limit_info
-      if rate_info[:remaining] < 5
+      if rate_info[:remaining] < 20
         log "Now I'm going to sleep until I have enough rate (#{rate_info[:reset]} - #{Time.at(rate_info[:reset]) - Time.now} seconds)"
         sleep(Time.at(rate_info[:reset]) - Time.now)
       else
-        log "Remaining calls #{rate_info[:remaining]}"
+        log "Remaining calls #{rate_info[:remaining]} until #{Time.at rate_info[:reset]}"
       end
       @@remaining_calls = [20, rate_info[:remaining]/2].min
     end
@@ -56,15 +56,24 @@ class WeekSegmenter
     # If there's no weeks between the users, we return
     return [] unless weeks_between_users > 1
 
+    # We try to get last user for the first week
+    end_of_week = first_user[:signup_date].to_datetime.end_of_week
+
+    # Now we get the first guess and the users' signup rate
+    guess, global_signups_rate = initial_user_id_guess first_user, last_user, end_of_week
+
     # From 1 to the numbers of week
     (1..weeks_between_users).map do |week|
-      # We try to get last user for this week
-      end_of_week = (first_user[:signup_date] + ((week-1)*7).days).to_datetime.end_of_week
 
-      # Now we get the first guess and the users' signup rate
-      guess, signups_rate = initial_user_id_guess first_user, last_user, end_of_week
+      log "Searching user for week ending #{end_of_week} with #{global_signups_rate} new users per day"
 
-      log "Searching user for week ending #{end_of_week} with #{signups_rate} new users per day"
+      # If we are not in the firest week we adjust the guess based on
+      # the last user of the previous week. This way, if our initial guess was too wrong
+      # we will now work with a more accurated guess
+      unless week == 1
+        guess += global_signups_rate * 7
+        end_of_week += 7.days
+      end
 
       # Here we are going to store the result
       user = nil
@@ -73,6 +82,7 @@ class WeekSegmenter
       # This variable will control which side of the end of the week are we
       past_week = true
       # signups_rate will be our increment variable so we are going to decrement it until we find the last user of the week
+      signups_rate = global_signups_rate
       while signups_rate >= 1
 
         guess = guess.to_i
@@ -118,12 +128,15 @@ class WeekSegmenter
               past_week = true
               guess += signups_rate
           end
-        rescue Twitter::Error::NotFound
+        rescue Twitter::Error::NotFound, Twitter::Error::Forbidden
           @@tried_users[guess] = nil
-          guess += past_week ? 1 : -1
-        rescue Twitter::Error::Forbidden
-          @@tried_users[guess] = nil
-          guess += past_week ? 1 : -1
+          guess += past_week ? signups_rate : -signups_rate
+          if !past_week && guess < 1
+            guess = -guess
+            signups_rate = (signups_rate/2).ceil
+            past_week = true
+          end
+        rescue Twitter::Error::RequestTimeout
         end
       end
 
