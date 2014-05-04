@@ -95,8 +95,8 @@ class WeekSegmenter
           user = nil
           if @@tried_users.has_key? guess
             user = @@tried_users[guess]
-            while user.nil? && @@tried_users.has_key?(guess+1)
-              guess += past_week ? 1 : -1
+            while user.nil? && @@tried_users.has_key?(guess+signups_rate)
+              guess += past_week ? signups_rate : -signups_rate
               user = @@tried_users[guess]
             end
           end
