@@ -37,7 +37,7 @@ class WeekSegmenter
     if @@remaining_calls < 5
       rate_info = rate_limit_info
       if rate_info[:remaining] < 20
-        log "Now I'm going to sleep until I have enough rate (#{rate_info[:reset]} - #{Time.at(rate_info[:reset]) - Time.now} seconds)"
+        log "Now I'm going to sleep until I have enough rate (#{Time.at rate_info[:reset]} - #{Time.at(rate_info[:reset]) - Time.now} seconds)"
         sleep(Time.at(rate_info[:reset]) - Time.now)
       else
         log "Remaining calls #{rate_info[:remaining]} until #{Time.at rate_info[:reset]}"
@@ -56,7 +56,7 @@ class WeekSegmenter
     weeks_between_users = weeks_between_users.floor
 
     # If there's no weeks between the users, we return
-    return [] unless weeks_between_users > 1
+    return [] unless weeks_between_users >= 1
 
     # We try to get last user for the first week
     end_of_week = first_user[:signup_date].to_datetime.end_of_week
@@ -67,7 +67,6 @@ class WeekSegmenter
     # From 1 to the numbers of week
     (1..weeks_between_users).map do |week|
 
-      log "Searching user for week ending #{end_of_week} with #{global_signups_rate} new users per day"
 
       # If we are not in the firest week we adjust the guess based on
       # the last user of the previous week. This way, if our initial guess was too wrong
@@ -77,12 +76,14 @@ class WeekSegmenter
         end_of_week += 7.days
       end
 
+      log "Searching user for week ending #{end_of_week} with #{global_signups_rate} new users per day"
+
       # Here we are going to store the result
       user = nil
 
       # We are going to implement a little binary search method
       # This variable will control which side of the end of the week are we
-      past_week = true
+      past_week = false
       # signups_rate will be our increment variable so we are going to decrement it until we find the last user of the week
       signups_rate = global_signups_rate
       while signups_rate >= 1
