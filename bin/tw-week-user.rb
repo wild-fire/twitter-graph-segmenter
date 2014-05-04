@@ -81,16 +81,26 @@ command :file do |c|
         next_user = { user_id: user_id.to_i, signup_date: Date.parse(signup_date) }
 
         unless previous_user.nil?
-          users = WeekSegmenter.find(previous_user, next_user)
+          results = WeekSegmenter.find(previous_user, next_user) do |user|
+            output_file = File.open args[1], 'a'
+            output_file << "#{user.id}\t#{user.screen_name}\t#{user.created_at}\n"
+            output_file.close
 
-          output_file = File.open args[1], 'a'
+            if args.length > 3
+              beacons_output_file = File.open args[3], 'a'
+              WeekSegmenter.beacons.each do |b|
+                beacons_output_file << "#{b[:user_id]}\t#{b[:signup_date]}\n"
+              end
+            end
 
-          users.each do |u|
-            puts "#{u.screen_name} signed up at #{u.created_at}"
-            output_file << "#{u.id}\t#{u.screen_name}\t#{u.created_at}\n"
           end
 
-          output_file.close
+          results.each do |r|
+            puts "#{r.screen_name} signed up at #{r.created_at}"
+          end
+
+          # We reset the beacons, or we're gonna have too much in memory
+          WeekSegmenter.beacons = beacons.dup
         end
       end
 

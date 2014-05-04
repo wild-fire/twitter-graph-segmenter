@@ -149,6 +149,8 @@ class WeekSegmenter
         end
       end
 
+      yield user
+
       user
 
     end
