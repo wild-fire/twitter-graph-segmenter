@@ -145,6 +145,11 @@ class WeekSegmenter
           unless beacon.nil?
             log "-- User not found but beacon #{beacon[:user_id]} created at #{beacon[:signup_date] } found"
             guess = beacon[:user_id]
+            past_week = beacon[:signup_date] < end_of_week
+            signups_rate = (signups_rate/2).ceil
+            # WAIT!! if the user is in the "next" side we can't cut the signups rate to 0 or
+              # it would mean that the last user of a week is in fact the first user of the next one
+            signups_rate = 1 if (signups_rate == 0) && !past_week
           end
         rescue Twitter::Error::RequestTimeout
         end
