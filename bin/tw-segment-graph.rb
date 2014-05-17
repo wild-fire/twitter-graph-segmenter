@@ -28,7 +28,7 @@ command :segment do |c|
       users_file.each_line do |line|
 
         user_id, username, signup_date = line.split("\t")
-        signup_date = Date.parse signup_date
+        signup_date = DateTime.parse(signup_date).utc
         signup_date = signup_date.end_of_week if args.count >= 4
 
         puts "#{Time.now.strftime('%Y-%m-%d %H:%M:%S')}: Segmenting until #{signup_date.strftime('%Y-%m-%d')} (#{username})"
