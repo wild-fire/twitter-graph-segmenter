@@ -33,7 +33,7 @@ command :segment do |c|
 
         puts "#{Time.now.strftime('%Y-%m-%d %H:%M:%S')}: Segmenting until #{signup_date.strftime('%Y-%m-%d')} (#{username})"
 
-        cmd = "awk -F\"\t\" '$2 <= #{user_id} && $1 <= #{user_id} {print $1,$2}; $1 > #{user_id} {exit}' #{args[0]} > #{output_folder}/#{signup_date.strftime('%Y-%m-%d')}"
+        cmd = "awk -F\"\t\" '{OFS=\"\\t\"} $2 <= #{user_id} && $1 <= #{user_id}{print $1,$2}; $1 > #{user_id} {exit}' #{args[0]} | gzip > #{output_folder}/#{signup_date.strftime('%Y-%m-%d')}.gz"
         puts " >> #{cmd}"
         system( cmd )
       end
