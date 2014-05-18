@@ -146,7 +146,7 @@ class WeekSegmenter
       guess += global_signups_rate * 7
       end_of_week += 7.days
 
-      yield user
+      yield user if block_given?
 
       results << user
 
