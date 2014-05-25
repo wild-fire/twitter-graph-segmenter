@@ -32,7 +32,11 @@ command :segment do |c|
         signup_date = signup_date.end_of_week if args.count >= 4
 
         puts "#{Time.now.strftime('%Y-%m-%d %H:%M:%S')}: Segmenting until #{signup_date.strftime('%Y-%m-%d')} (#{username})"
-
+        # The command is quite 'simple':
+        # 1) We read the file with AWK .
+        #    If both user ids are less or equal to the current limit we return both ids
+        #    If the first user is greater than the current limit then we exit from the file (because the file is sorted)
+        # 2) We gzip the output (output may be quite big)
         cmd = "awk -F\"\t\" '{OFS=\"\\t\"} $2 <= #{user_id} && $1 <= #{user_id}{print $1,$2}; $1 > #{user_id} {exit}' #{args[0]} | gzip > #{output_folder}/#{signup_date.strftime('%Y-%m-%d')}.gz"
         puts " >> #{cmd}"
         system( cmd )
