@@ -40,6 +40,18 @@ command :find do |c|
       first_user = WeekSegmenter.client.user args[0]
       last_user = WeekSegmenter.client.user args[1]
 
+      # And open the beacons file
+      if args.length > 2
+        beacons_file = File.open args[2]
+        beacons = []
+        beacons_file.each_line do |l|
+          user_id, signup_date = l.split("\t")
+          beacons << { user_id: user_id.to_i, signup_date: DateTime.parse(signup_date) }
+        end
+        WeekSegmenter.beacons = beacons.dup
+      end
+
+      # And now find the last users of the week
       users = WeekSegmenter.find({user_id: first_user.id, signup_date: first_user.created_at.to_date}, {user_id: last_user.id, signup_date: last_user.created_at.to_date})
 
       users.each do |u|
