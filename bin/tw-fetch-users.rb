@@ -3,7 +3,7 @@
 require 'rubygems'
 require 'commander/import'
 require 'active_support/core_ext/date/calculations'
-require_relative '../lib/week_segmenter.rb'
+require_relative '../lib/users_fetcher.rb'
 
 program :version, '0.0.1'
 program :description, 'This command fetches information from users falling into the interval passed as parameter'
@@ -33,7 +33,7 @@ command :fetch do |c|
         user_ids = (current_interval_start..current_interval_end).to_a
 
         puts "[#{Time.now}] Fetching users from #{current_interval_start} to #{current_interval_end}"
-        users = WeekSegmenter.client.users user_ids
+        users = UsersFetcher.fetch user_ids
 
         output = File.open output_file, 'a'
 
