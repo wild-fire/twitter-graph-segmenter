@@ -38,15 +38,17 @@ class UsersFetcher
   def self.sleep_until_rate_limit
     # Rate limit info calls also have a rate limit, so we use a counter to limit the amount of API calls made
     # When this counter is less than 5, we make the check
-    if @@remaining_calls < 5
+    if @@remaining_calls < 2
       # We get the rate limit info
       rate_info = rate_limit_info
       # Since we are using a counter and not perform this check with every API call we must give some space or we can fall into the rate limit without noticing
       # Our space are 20 API calls. If we have less than 20 we stop
-      if rate_info[:remaining] < 20
+      if rate_info[:remaining] < 5
         # And now here we sleep until the reset time for the rate limit
         log "Now I'm going to sleep until I have enough rate (#{Time.at rate_info[:reset]} - #{Time.at(rate_info[:reset]) - Time.now} seconds)"
-        sleep(Time.at(rate_info[:reset]) - Time.now)
+        time_sleep = Time.at(rate_info[:reset]) - Time.now
+        time_sleep = 60 if time_sleep < 0 # If twitter suggests me to sleep a negative amount of time we wait a minute (something is wrong on the Internet) 
+        sleep time_sleep + 10 # We wait 10 extra seconds, to avoid overlapping with previous rate windows
       else
         log "Remaining calls #{rate_info[:remaining]} until #{Time.at rate_info[:reset]}"
       end
@@ -56,7 +58,17 @@ class UsersFetcher
   end
 
   def self.fetch user_ids
-    sleep_until_rate_limit
-    self.client.users user_ids
+    while true
+      begin
+        sleep_until_rate_limit
+        return self.client.users user_ids
+      rescue Twitter::Error::RequestTimeout
+        log "Timeout"
+      rescue Twitter::Error::TooManyRequests
+      end
+    end
+  rescue Twitter::Error::NotFound
+    log "Not Found"
+    return []
   end
 end
