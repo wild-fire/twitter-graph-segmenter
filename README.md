@@ -45,13 +45,13 @@ Now you can run `bundle install` and install all the required gems. If you recei
 
 ## Executing the scripts
 
-This repo have two scripts within: tw-week-user and tw-segment-graph. They are run just by typing `bin/tw-week-user.rb` or `bin/tw-segment-graph.rb`.
+This repo have three scripts within: tw-fetch-users, tw-week-user and tw-segment-graph. They are run just by typing `bin/tw-fetch-users.rb, bin/tw-week-user.rb` or `bin/tw-segment-graph.rb`.
 
 If files are not executable you can add the execution permission on them using chmod `chmod +X bin/*.rb`.
 
-You can add help command (`bin/tw-week-user.rb help`) to se a command list and use the help option in any command (i.e. `bin/tw-week-user.rb file --help`)
+You can add help command (`bin/tw-week-user.rb help`) to see a command list and use the help option in any command (i.e. `bin/tw-week-user.rb file --help`)
 
-## Last user of the week
+### Last user of the week
 
 `find` command takes two username and displays the last user for every week between the signup dates of those users.
 
@@ -59,9 +59,13 @@ You can add help command (`bin/tw-week-user.rb help`) to se a command list and u
 
 `file` command takes a file of first beacons and returns the last users for every week between two adjacent lines in the file. See the *data requirements* section for more info.
 
-## Segment graph
+### Segment graph
 
 `segment` command takes a users graph file and a list of user ids and their signup date. As a return it will return a series of files (one for each user in the list) containing just the lines of the graph file that involve user ids less than the current limit.
+
+### Fetch users
+
+`fetch` command in the bin/tw-fetch-users script allows you to fetch all users profile from the `first_user_id` to the `last_user_id` and flush the information (user id, screen name and signup date) to a TSV file.
 
 ## Data Requirements
 
